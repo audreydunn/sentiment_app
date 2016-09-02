@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tweet Classification</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<style>
+	.content {
+		padding-top: 160px;
+		border: 3px none w;
+		text-align: center;
+	}
+	.page-title {
+
+	}
+	.button {
+		padding-left: 0px;
+	}
+	.box {
+		padding-right: 0px;
+	}
+	
+	header {
+		padding: 20px 0;
+	}
+
+	header h2 {
+		font-weight: 700;
+		text-align: left;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	header p {
+		padding: 0 5px;
+		font-size: 22px;
+		text-align: right;
+	}
+	
+	.example {
+		text-align: center;
+		color: #797D7F;
+		font-size: 16px;
+		padding-top: 20px;
+	}
+	</style>
+	</head>
+	<body>
+	
+<header>
+    <div>
+      <h2>Twitter User Classifier</h2>
+		<nav>
+			<p><a href="about" target="_self">about</a></p>
+			<p><a href="">contact</a></p>
+		</nav>
+    </div>
+ </header>
+	
+<div class='content'>	
+<h2 class="page-title">Please enter a Twitter username:</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+	<dl class='box'>
+		{{ render_field(form.tweetreview, cols='45', rows='1') }}
+	</dl>
+	<div class="button">
+		<input type=submit value='Submit username' name='submit_btn'>
+	</div>
+</form>
+</div>
+
+<p class="example">Example: Enter @twitter as twitter</p>
+
+	</body>
+</html>

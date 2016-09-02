@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tweet Classification</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
+	<style>
+	.content {
+		padding-top: 160px;
+		border: 3px none w;
+		text-align: center;
+	}
+	
+	header {
+		padding: 20px 0;
+	}
+
+	header h2 {
+		font-weight: 700;
+		text-align: left;
+	}
+	
+	.title {
+
+	}
+	
+	.text {
+		font-size: 18px;
+	}
+	
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	header p {
+		padding: 0 5px;
+		font-size: 22px;
+		text-align: right;
+	}
+	</style>
+	</head>
+	<body>
+
+<header>
+    <div>
+      <h2>Twitter User Classifier</h2>
+		<nav>
+			<p><a href="about" target="_self">about</a></p>
+			<p><a href="">contact</a></p>
+		</nav>
+    </div>
+ </header>
+	
+<div class='content'>	
+<h2 class="title">Prediction:</h2>
+<div class="text">This Twitter user's recent tweets are <strong>{{ p_final }}% {{ prediction }}</strong>
+	(probability: {{ probability }}%).</div>
+
+<div class='button'>
+	<form action="/">
+		<input type=submit value='Submit another review'>
+	</form>
+</div>
+</div>
+
+	</body>
+</html>

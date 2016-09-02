@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+	<head>
+		<title>about</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
+	<style>
+	.content {
+		padding-top: 100px;
+		border: 3px none w;
+		text-align: center;
+		font-size: 18px;
+	}
+	
+	header {
+		padding: 20px 0;
+	}
+
+	header h2 {
+		font-weight: 700;
+		text-align: left;
+	}
+
+	header nav {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	header p {
+		padding: 0 5px;
+		font-size: 22px;
+		text-align: right;
+	}
+	</style>
+	</head>
+	<body>
+<header>
+	<div>
+		<h2>About</h2>
+		<nav>
+			<p><a href="tweetform">classifier</a></p>
+			<p><a href="">contact</a></p>
+    	</nav>
+    </div>
+</header>
+
+<div class="content">
+	<p><strong>*</strong> This app classifies whether a Twitter user's recent tweets (up to 3200 tweets) have been majority positive or negative and how sure the classifier is of this prediction.</p>
+	<p><strong>*</strong> The classifier uses a logistic regression model trained with word-count feature vectors.</p>
+	<p><strong>*</strong> The app filters out any tweets with no English words.</p>
+	<p><strong>*</strong> The classifier was trained using English tweets labeled positive and negative.</p>
+	<p><strong>*</strong> Positive and Negative word lists used are from:<br><br>
+	Minqing Hu and Bing Liu. "Mining and Summarizing Customer Reviews."<br> 
+       Proceedings of the ACM SIGKDD International Conference on Knowledge<br> 
+       Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle,<br> 
+       Washington, USA<br><br>
+	Bing Liu, Minqing Hu and Junsheng Cheng. "Opinion Observer: Analyzing<br>
+       and Comparing Opinions on the Web." Proceedings of the 14th<br> 
+       International World Wide Web conference (WWW-2005), May 10-14,<br>
+       2005, Chiba, Japan.<br>
+	</p>
+</div>
+
+
+	</body>
+</html>
